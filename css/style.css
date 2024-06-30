@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(22, 22, 22), rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+form {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+select {
+    width: 50vw;
+    color: red;
+    background-color: white;
+}
+option {
+    color: red;
+    background-color: white;
+}
+button {
+    width: 10vw;
+    background-color: red;
+    color: white;
+    border: none;
+}
+#instrucao {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: red;
+    text-shadow: 0 0 10px black;
+}
+div {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resultado {
+    animation: aparecer 0.5s;
+    display: none;
+    font-size: 100px;
+    color: red;
+    text-shadow: 0 0 10px black;
+}
+
+@keyframes aparecer {
+    from {
+        filter: opacity(0);
+    }
+    to {
+        filter: opacity(100%);
+    }
+}
